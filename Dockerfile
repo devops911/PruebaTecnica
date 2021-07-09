@@ -13,5 +13,5 @@ FROM java:8
 WORKDIR /
 COPY /target/swagger-spring-1.0.0.jar swagger-spring-1.0.0.jar 
 EXPOSE 8080
-CMD java - jar swagger-spring-1.0.0.jar
-
+#CMD java - jar swagger-spring-1.0.0.jar
+CMD ["java","-jar","swagger-spring-1.0.0.jar"]
